@@ -1,0 +1,242 @@
+/******************************
+        Base Element Styles
+******************************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 0.5em;
+}
+
+a,
+a:hover,
+a:visited,
+a:link {
+	text-decoration: none;
+    color: #000;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 1.2em;
+}
+
+h5 {
+    color: azure;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ---- glyphicons ---- */
+
+.glyphicon {
+    font-size: 1.5em;
+    border: black 1px solid;
+    padding: 3px;
+    color: #00B5EF;
+    border-color: #00B5EF;
+}
+
+.icon {
+    position: absolute;
+    margin: -2.2em 0 0 0;
+    padding-left: 40%;
+}
+
+.glyphicon-user {
+   font-size: 2.5em;
+   background-color: beige;
+   border-radius: 50%;
+   padding: 10px;
+   border: none;
+   box-shadow: 0 3px 2px rgba(0,0,0, .4);
+}
+
+.glyphicon-gift {
+    font-size: 2em;
+    border: none;
+    color: darkgrey;
+}
+
+/* ---- contact-info ---- */
+
+.contact-info li{
+   margin-bottom: 0;
+}
+
+.contact-info .email a, a:link {
+    color:  #00B5EF;
+}
+
+
+/******************************
+        Base Layout Styles
+******************************/
+
+/* ---- Navigation ---- */
+
+.main-header {
+    padding: 1em 1em 1em 1em;
+}
+
+.logo {
+    margin: 0 2em 0 2em;
+    font-size: 2em;
+    padding-top: .5em;
+    padding-right: 2em;
+}
+
+/*.horizontal-collapse {
+    height: 70px;
+  }
+.navbar-collapse.in {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+  }*/
+
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #00B5EF;
+	padding: 1.5em 0 6em 0;
+	margin-bottom: 0;
+    text-align: center;
+}
+
+.container   {
+    padding-top: 0;
+}
+
+.container .btn {
+    width: 60%;
+    max-width: 150px;
+}
+
+.perk p,
+.contact-info{
+    display: inline-block;
+    width: 86%;
+    vertical-align: top;
+}
+
+.perk span {
+    margin-right: .5em;
+}
+
+
+.panel {
+    padding-top: 5em;
+}
+
+.main-footer {
+	background: #0873a0;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+ #perks {
+    padding-top:6.5%;
+}
+
+.col-1, .col-2, .social {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: -4px;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+
+.col-3 ul  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col-3 ul li {
+    padding: .5em .5em .5em .5em;
+}
+
+.col-3 .head, .copyright {
+    text-align: center;
+}
+
+.logo {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/******************************
+        Media queries
+******************************/
+
+@media screen and (min-width: 991px){
+
+    footer span {
+        display: block;
+        margin-left: 2em;
+    }
+
+    .logo {
+        margin: 0em 0px 0px 1em;
+        padding: 0em 0px 0px 1em;
+    }
+
+    header .logo {
+        margin-left: 7em;
+    }
+    .col {
+        display: inline-block;
+        width: 20%;
+        vertical-align: top;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-right: -4px;
+    }
+
+    .col-3 ul  {
+        display: block;
+    }
+
+    .col a, a:visited {
+        color: lightgray;
+    }
+
+    .col-3 .head {
+        text-align: left !important;
+    }
+
+    footer span {
+        display: block;
+    }
+
+    #perks {
+        padding-top:6.5%;
+    }
+
+}
